@@ -1,0 +1,13 @@
+.button {
+  margin-left: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: 1px solid rgb(119, 5, 5);
+  cursor: pointer;
+  background-color: #279abd;
+}
+
+.li {
+  margin-bottom: 5px;
+}
