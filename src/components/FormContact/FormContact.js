@@ -2,7 +2,6 @@ import React, { Component } from "react";
 // import shortid from "shortid";
 import s from "./FormContact.module.css";
 import PropTypes from "prop-types";
-import { AiOutlineUserAdd } from "react-icons/ai";
 
 class ContactForm extends Component {
   state = {
@@ -64,8 +63,7 @@ class ContactForm extends Component {
         </label>
 
         <button className={s.button} type="submit">
-          <span className={s.btnText}>Add contact</span>{" "}
-          <AiOutlineUserAdd size="20px" color="rgb(130, 27, 112)" />
+          <span className={s.btnText}>Add contact</span>
         </button>
       </form>
     );
