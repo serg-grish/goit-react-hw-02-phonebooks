@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import shortid from "shortid";
+import { v4 as uuidv4 } from "uuid";
 import FormContact from "../FormContact/FormContact";
 import Filter from "../Filter/Filter";
 import ContactsList from "../ContactsList/ContactsList";
@@ -8,10 +8,10 @@ import "./app.scss";
 class App extends Component {
   state = {
     contacts: [
-      { id: "id-1", name: "Марина Соколова", number: "459-12-56" },
-      { id: "id-2", name: "Денис Степанов", number: "443-89-12" },
-      { id: "id-3", name: "Вадим Обрамов", number: "645-17-79" },
-      { id: "id-4", name: "Елена Степанова", number: "227-91-26" },
+      { id: uuidv4(), name: "Марина Соколова", number: "459-12-56" },
+      { id: uuidv4(), name: "Денис Степанов", number: "443-89-12" },
+      { id: uuidv4(), name: "Вадим Обрамов", number: "645-17-79" },
+      { id: uuidv4(), name: "Елена Степанова", number: "227-91-26" },
     ],
     filter: "",
   };
@@ -19,7 +19,7 @@ class App extends Component {
   addContact = (name, number) => {
     const { contacts } = this.state;
     const newContact = {
-      id: shortid.generate(),
+      id: uuidv4(),
       name,
       number,
     };
