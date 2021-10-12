@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import shortid from "shortid";
 import s from "./FormContact.module.css";
 import PropTypes from "prop-types";
 
